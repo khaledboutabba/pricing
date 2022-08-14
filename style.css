@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+:root {
+    --primary-color: #FF6768;
+    --secondary-color: #263859;
+    --tertiary-color: #6B778D;
+    --light-color: #FAFAFA;
+    --dark-color: #191A19;
+    }
+
+body {
+    background-color: var(--tertiary-color);
+    font-family: 'Roboto';
+    }
+    
+
+.pricing {
+    border: 1px solid var(--light-color);
+    background-color:var(--secondary-color);
+    margin : 30px;
+    text-align : center;
+    line-height : 2;
+    padding-block: 3rem;
+    text-align: center;
+    
+   ;
+  
+}
+    
+    .pricing:hover { 
+        box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+        border-top-color:var(--primary-color);
+    }
+
+.pricing-container {
+    display:flex;
+    justify-content: center;
+    max-width : max 900px;
+    margin : 0px auto;
+    }
+
+@media screen and (max-width: 700px) {
+    .pricing-container {
+        display:flex;
+        align-content: space-between;
+        flex-direction : column;
+    }
+    }
+    
+h4 { 
+    color :var(--light-color);
+    }
+h2 {
+    color : var(--primary-color);
+    }
+
+    
+.period {
+    color : var(--tertiary-color);
+    }
+    ul {
+        color : var(--tertiary-color);
+        
+    }
+    
+    
+    button {
+        background-color:var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 5px;
+        padding : 0.5rem;
+        cursor: pointer;
+        border-color: transparent;
+    }
+    
+    button:hover {
+        background-color : var(--secondary-color);
+        color : var(--primary-color);
+        border-color: var(--primary-color);
+    }
+    
+    .details{
+        color: var(--light-color);
+        display:none;
+    }   
+    
+    .periode, span {
+        font-size: 13px;
+    }
+    
+    @media screen and (max-width: 700px) {
+    ul {
+       display :none;
+    }
+    .details{
+        display:block;
+    }
+    }
+    
+    ul {
+        list-style-type: none;
+    }
